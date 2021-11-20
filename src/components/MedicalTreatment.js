@@ -10,14 +10,9 @@ import React from 'react';
 function MedicalTreatment() {
   return (
     <div>
-      <ul>
-        <li>{props.treatId}</li>
-        <li>{props.treatCourseId}</li>
-        <li>{props.type}</li>
-        <li>{props.category}</li>
-        <li>{props.name}</li>
-        <li>{props.StartDate}</li>
-      </ul>
+      {props.medicalTreatment.treatId}, {props.medicalTreatment.treatCourseId},{' '}
+      {props.medicalTreatment.type}, {props.medicalTreatment.category},{' '}
+      {props.medicalTreatment.name}, {props.medicalTreatment.startDate}
     </div>
   );
 }
